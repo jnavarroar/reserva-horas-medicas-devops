@@ -26,6 +26,7 @@ Aplicar conceptos básicos de DevOps mediante la creación de una aplicación we
 ```text
 reserva-horas-medicas-devops/
 ├── src/
+│   ├── favicon.svg
 │   ├── index.html
 │   └── styles.css
 ├── Dockerfile
@@ -108,3 +109,9 @@ GitHub permite mantener una copia del código y documentar las modificaciones me
 
 La página web fue desarrollada y probada localmente mediante Docker y Nginx.
 Se realizaron pruebas de funcionamiento, revisión de registros y monitoreo del consumo de recursos.
+
+## Mejoras realizadas
+
+Durante la revisión de los registros de Nginx se detectó un error 404 asociado a la solicitud del ícono del sitio web.
+Para corregirlo, se incorporó el archivo favicon.svg y se agregó su referencia en index.html.
+Posteriormente, se reconstruyó la imagen Docker y se comprobó que el servidor entregaba el archivo correctamente mediante una respuesta HTTP 200.
