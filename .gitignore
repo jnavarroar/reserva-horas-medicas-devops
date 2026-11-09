@@ -1,0 +1,12 @@
+# Variables de entorno locales
+.env
+
+# Registros locales
+*.log
+
+# Configuraciones personales del editor
+.vscode/
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db

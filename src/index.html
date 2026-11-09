@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema demostrativo de reserva de horas médicas">
+    <title>Reserva de Horas | Centro Médico Horizonte Talca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="contenedor">
+
+            <p class="etiqueta-campana">
+                🎀 OCTUBRE ROSA · MES DE CONCIENTIZACIÓN
+            </p>
+
+            <h1>Centro Médico Horizonte Talca</h1>
+
+            <p class="subtitulo">
+                Atención cercana y bienestar en cada etapa de tu vida
+            </p>
+
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="bienvenida">
+            <h2>Reserva de horas médicas</h2>
+            
+            <div class="mensaje-rosa">
+                <h3>Cuidarte también es una prioridad</h3>
+                <p>
+                    Octubre Rosa nos invita a reflexionar sobre la
+                    importancia del autocuidado, la prevención y
+                    la atención oportuna de la salud de las mujeres.
+                    Cada paso que damos para cuidarnos cuenta.
+                </p>
+            </div>
+
+            <p>
+                Bienvenido a nuestro sistema de reservas.
+                Aquí podrás consultar las especialidades disponibles
+                y simular la solicitud de una hora médica.
+            </p>
+
+            <div class="estado-servicio">
+                <span class="indicador"></span>
+                Servicio de demostración disponible
+            </div>
+        </section>
+
+        <section class="informacion">
+            <h2>Información de atención</h2>
+
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <h3>Horario de atención</h3>
+                    <p>Lunes a viernes</p>
+                    <p>08:00 a 18:00 horas</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Especialidades</h3>
+                    <p>Medicina General y Ginecología</p>
+                    <p>Mastología y Cardiología</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Modalidad</h3>
+                    <p>Atención presencial</p>
+                    <p>Reserva de horas en línea</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion-formulario">
+            <h2>Solicitar una hora médica</h2>
+
+            <p>
+                Completa los siguientes campos para simular
+                una reserva de atención.
+            </p>
+
+            <form class="formulario">
+
+                <div class="campo">
+                    <label for="nombre">Nombre del paciente</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ejemplo: Paciente de prueba"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="especialidad">Especialidad médica</label>
+                    <select id="especialidad" name="especialidad" required>
+                        <option value="">Seleccione una especialidad</option>
+                        <option value="medicina-general">Medicina General</option>
+                        <option value="pediatria">Pediatría</option>
+                        <option value="cardiologia">Cardiología</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha de atención</label>
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required>
+                </div>
+
+                <div class="campo">
+                    <label for="horario">Horario disponible</label>
+                    <select id="horario" name="horario" required>
+                        
+                        <option value="">Seleccione una especialidad</option>
+                        <option value="medicina-general">Medicina General</option>
+                        <option value="ginecologia">Ginecología</option>
+                        <option value="mastologia">Mastología</option>
+                        <option value="cardiologia">Cardiología</option>
+
+                    </select>
+                </div>
+
+                <button type="button" disabled>
+                    Confirmar reserva (demostración)
+                </button>
+
+                <p class="aviso">
+                    Este formulario es parte de un proyecto académico.
+                    No realiza reservas reales ni almacena
+                    información de pacientes.
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Centro Médico Horizonte Talca - Proyecto académico DevOps</p>
+        <p>Ingeniería en Informática | IACC 2026</p>
+    </footer>
+
+</body>
+</html>
